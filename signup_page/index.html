@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form id="registrationForm">
+    <div class="container">
+        <h1 class="form-title">Registration</h1>
+
+        <div class="user-input">
+            <label for="firstname"> First Name </label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter your first name">
+            <span class="error-message" id="firstname-error"></span>
+        </div>
+
+        <div class="user-input">
+            <label for="lastname"> Last Name </label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter your last name">
+            <span class="error-message" id="lastname-error"></span>
+        </div>
+
+        <div class="user-input">
+            <label for="Email"> Email </label>
+            <input type="email" id="Email" name="Email" placeholder="Enter your Email">
+            <span class="error-message" id="email-error"></span>
+        </div>
+
+        <div class="user-input">
+            <label for="Phonenumber"> Phone Number </label>
+            <input type="tel" id="Phonenumber" name="Phonenumber" placeholder="Enter your Phone Number">
+            <span class="error-message" id="phonenumber-error"></span>
+        </div>
+
+        <div class="user-input">
+            <label for="Password"> Password </label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+            <span class="error-message" id="password-error"></span>
+        </div>
+
+        <div class="user-input">
+            <label for="confirmpassword"> Confirm Password </label>
+            <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm password">
+            <span class="error-message" id="confirmpassword-error"></span>
+        </div>
+
+        <div class="register-btn">
+            <input type="submit" value="Signup">
+        </div>
+    </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* Base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px; /* Corrected margin format */
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+
+/* Form title styling */
+.form-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+/* User input styling */
+.user-input {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.user-input label {
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input input {
+    height: 40px;
+    width: 100%;
+    border-radius: 7px;
+    outline: 1px solid grey;
+    padding: 0 10px;
+}
+
+/* Register button styling */
+.register-btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #5e5b5b;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Hover effect for the button */
+.register-btn:hover {
+    background: gray;
+    color: black;
+    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
+    height: 50px;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none; /* Hide by default */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        min-width: 280px;
+    }
+}
